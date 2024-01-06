@@ -42,7 +42,7 @@
 
   - name: Copy catalogue service
     ansible.builtin.copy:
-      src: catalogue.service
+      src: catlog.service
       dest: /etc/systemd/system/catalogue.service
 
   - name: deamon realod and start
