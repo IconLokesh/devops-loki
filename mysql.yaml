@@ -1,5 +1,5 @@
 - name: install mysql component
-  hosts: mysql1
+  hosts: mysql
   become: yes
   tasks:
   - name: disable current version of mysql
