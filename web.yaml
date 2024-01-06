@@ -1,13 +1,12 @@
-  - name: install web components
-   hosts: web
-   become: yes
-   tasks:
-   - name: install nginx
-     ansible.builtin.dnf:
-    name: nginx
-    state: present
+- name: install web component
+  hosts: web
+  become: yes
+  tasks:
+  - name: install nginx
+    ansible.builtin.dnf:
+      name: nginx 
+      state: present
   
-
   - name: remove html directory
     ansible.builtin.file:
       path: /usr/share/nginx/html
