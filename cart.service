@@ -5,7 +5,7 @@ User=roboshop
 Environment=REDIS_HOST=redis.iconlokesh.online
 Environment=CATALOGUE_HOST=catlog.iconlokesh.online
 Environment=CATALOGUE_PORT=8080
-ExecStart=/bin/node /app/server.jsS
+ExecStart=/bin/node /app/server.js
 SyslogIdentifier=cart
 
 [Install]
